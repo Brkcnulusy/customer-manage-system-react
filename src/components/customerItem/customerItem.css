@@ -24,6 +24,7 @@
     font-size: 18px;
 }
 .customer-item .delete-info {
+    cursor: pointer;
     width: 30px;
     height: 30px;
     background-color: #ff0000;

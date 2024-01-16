@@ -1,8 +1,10 @@
 .customer-list {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    gap: 5px;
     list-style-type: none;
     padding: 0;
 }

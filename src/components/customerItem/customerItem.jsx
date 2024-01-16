@@ -1,6 +1,6 @@
 import './customerItem.css';
 
-function customerItem() {
+const CustomerItem = ({customer, handleDelete}) => {
   return (
     <li className="customer-item">
       <div className="customer-info">
@@ -9,13 +9,13 @@ function customerItem() {
           src="https://i.pravatar.cc/300"
           alt="image"
         />
-        <span className="customer-name">Burak Can Ulusoy</span>
+        <span className="customer-name">{customer.customerName}</span>
       </div>
-      <button className="delete-info">
+      <button className="delete-info" onClick={()=>handleDelete(customer)}>
         <i className="fa-solid fa-trash"></i>
       </button>
     </li>
   );
 }
 
-export default customerItem;
+export default CustomerItem;
